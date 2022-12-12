@@ -118,4 +118,4 @@ if(tempoVariavel = 0){
     alert(`Valor inválido, o tempo informado deve ser em dias.`);
 };
 let prestacaoValor = valorVariavel + (valorVariavel*(taxaVariavel/100)*tempoVariavel);
-alert(`O valor da prestação é de R$ ${prestacaoValor} reais.`)
+alert(`O valor da prestação é de R$ ${prestacaoValor} reais.`);
