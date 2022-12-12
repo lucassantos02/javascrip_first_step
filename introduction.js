@@ -1,19 +1,19 @@
 alert(`Atividade 1`);
 
-let number1 = parseInt(prompt("Digite o número que deseja comparar..."));
-let number2 = parseInt(prompt("Digite o número que deseja comparar..."));
-let diferenca = (number1,number2,'op');
-if(number1 > number2 && number1 == number2){
-    diferenca = number1-number2;
-}else if(number1 < number2){
-    diferenca = number2-number1;
+let number = parseInt(prompt("Digite o número que deseja comparar..."));
+let secNumber = parseInt(prompt("Digite o número que deseja comparar..."));
+let diferenca = (number,secNumber,'op');
+if(number > secNumber && number == secNumber){
+    diferenca = number-secNumber;
+}else if(number < secNumber){
+    diferenca = secNumber-number;
 };
-if(number1 > number2){
-    alert(`O primeiro número,  ${ number1}, é maior e diferença é ${diferenca}.`);
-}else if(number1 < number2){
-    alert(`O segundo número,${number2}, é maior e a diferença é ${diferenca}.`);
+if(number > secNumber){
+    alert(`O primeiro número,  ${number}, é maior e diferença é ${diferenca}.`);
+}else if(number < secNumber){
+    alert(`O segundo número,${secNumber}, é maior e a diferença é ${diferenca}.`);
 }else{
-    alert(`Os números ${number1} e ${number2}, tem o mesmo valor.`);
+    alert(`Os números ${number} e ${secNumber}, tem o mesmo valor.`);
 };
 
 
@@ -28,7 +28,7 @@ if(number1 > number2){
     alert(`O segundo número,${number2}, é maior.`);
 }else{
     alert(`Os números ${number1} e ${number2}, tem o mesmo valor.`);
-
+}
 
 
 alert(`Atividade 3`);
@@ -112,9 +112,10 @@ alert(`Atividade 10`);
 let valorVariavel = parseInt(prompt("Qual o valor?"));
 let taxaVariavel = parseInt(prompt("Qual a taxa?"));
 let tempoVariavel = parseInt(prompt("Qual o tempo?"));
-if(taxaVariavel = 0){
+if(tempoVariavel = 0){
+    alert(`Valor inválido, o tempo informado deve ser em dias.`);
+}else if(tempoVariavel = parseFloat){
     alert(`Valor inválido, o tempo informado deve ser em dias.`);
 };
-
-let prestacaoValor = valorVariavel + (valorVariavel * (taxaVariavel/100) * tempoVariavel);
-alert(`O valor da prestação é de R$ ${prestacaoValor}.`);
+let prestacaoValor = valorVariavel + (valorVariavel*(taxaVariavel/100)*tempoVariavel);
+alert(`O valor da prestação é de R$ ${prestacaoValor} reais.`)
